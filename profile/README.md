@@ -70,7 +70,7 @@ This project was undertaken for **EN2160 – Electronic Design Realization** as 
 | **Steel Chassis**        | <img src="images/chassy.jpg"     width="180"/> |
 | **Drive Wheel**          | <img src="images/Wheel.jpg"      width="180"/> |
 | **Modified Castor**      | <img src="images/ModifiedCastor.jpg" width="180"/> |
-| **Motor Placement**      | <img src="images/ModifiedCastor.jpg" width="180"/> |
+| **Motor Placement**      | <img src="images/motorAssembly.jpg" width="180"/> |
 
 ---
 ---
@@ -169,7 +169,7 @@ Initial 15cm diameter wheels provided insufficient ground clearance when integra
 | **IMU**          | Bosch BNO055 | Integrated sensor-fused drift/noise free Euler angles |
 | **Communication**| Mercusys MW600UH | Dual-band, high-power Wi-Fi |
 | **Display**      | 7 ″ HDMI Touch | User Interface, Local diagnostics & control |
-| **DC-DC Converters**    | Aluminium Bars and Zinc coated sheets | Strength & clean finish |
+| **DC-DC Converters**    | 5V, 12V Buck converters and 1500W boost Conveter for motors |  |
 
 ---
 ## 🖥️ Custom PCBs
