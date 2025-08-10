@@ -60,7 +60,7 @@ This project was undertaken for **EN2160 – Electronic Design Realization** as 
 | <img src="images/wheel_placement.png"      width="350"/> | Wheel & motor configuration |
 | <img src="images/chassis.png"        width="350"/> | Steel chassis |
 
-> The CAD model is for **measurement verification & demonstration only**. Not direct manufacturing.
+> The CAD model is for **measurement verification & demonstration only**. Not direct manufacturing. The coupler, Back motor Mount, and enclosing lid's designs were altered in the manufactured assembly.
 
 ### Additional Images
 
@@ -112,7 +112,7 @@ Acquiring encoder readings from closed-loop stepper motors for sensor fusion and
 **Results:**
 - ✅ Accurate encoder reading up to 500 RPM with zero count loss
 - ⚠️ Above 500 RPM: ~3 count loss per 2000 counts
-- ❌ Count loss increased quadratically with every 100 RPM increment
+- ❌ Count loss increased approximately quadratically with every 100 RPM increment
 
 ## 2. Mechanical Design: Wheel Selection and Ground Clearance
 
@@ -122,7 +122,7 @@ Initial 15cm diameter wheels provided insufficient ground clearance when integra
 ### Solution
 - **Wheel Upgrade:** Increased diameter from 15cm to 20cm
 - **Custom Coupling:** Designed and manufactured a [custom motor coupler](images/CouplerTop.jpg)
-- **Ground Clearance:** Achieved >2cm clearance to meet traversal requirements
+- **Ground Clearance:** Achieved >4cm clearance to meet traversal requirements
 
 ## 3. PCB Design and Communication Issues
 
@@ -130,7 +130,7 @@ Initial 15cm diameter wheels provided insufficient ground clearance when integra
 **Problem:** Rapid development cycle led to suboptimal pin assignments, resulting in one motor being controlled by a 10-bit timer lacking hardware-controlled CTC (Clear Timer on Compare) mode.
 
 **Initial Workaround:**
--  Generated a 50 % duty-cycle “pseudo-step” PWM. To span the full RPM range we had to switch prescalers on-the-fly - acceptable for the first milestone, but sub-optimal.
+-  Generated a 50 % duty-cycle “pseudo-step” PWM. To span the full RPM range, we had to switch prescalers on-the-fly - acceptable for the first milestone, but sub-optimal.
 
 **Solution:**
 - Dual prescaler configuration to cover entire RPM range
